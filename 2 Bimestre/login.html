@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Nature IFPI</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(250, 250, 250);
+            display: flex;
+            background-image: url(pngegg.png);
+            background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .background-main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main div{
+            text-align: center;
+        }
+        #login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 35px;
+        }
+        div h1, h2{
+            font-weight: 100;
+        }
+        h2{
+            color: rgb(119, 119, 119);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+        }
+        input {
+            font-weight: 600;
+            background-color: rgb(250, 250, 250);
+            border: none; /* Remove as outras bordas */
+            border-bottom: 1px solid ; /* Borda inferior transparente inicialmente */
+            padding: 0.8em;
+            margin-bottom: 1em;
+            width: 100%;
+            max-width: 300px;
+            outline: none; /* Remove o contorno padrão */
+            transition: box-shadow 0.8s, border-radius 0.8s, border-bottom-color 0.8s, border-bottom-width 0.8s; /* Transição suave */
+        }
+
+        input:focus {
+            box-shadow: 0 0 10px rgb(119, 119, 119);
+            border-radius: 5px;
+            border-bottom-color: rgb(119, 119, 119); /* Cor da borda inferior ao focar */
+            border-bottom-width: 1px; /* Espessura da borda inferior ao focar */
+        }
+        button {
+            width: 40%;
+            padding: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main class = "background-main">
+        <div id = "login">
+            <div>
+                <h1>Sistema Nature IFPI</h1>
+                <h2>versão 1.0</h2>
+            </div>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        
+    </main>
+</body> 
+</html>

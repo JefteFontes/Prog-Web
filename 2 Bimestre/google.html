@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.container{
+            margin: 0 5%;
+        }
+        nav{
+            padding: 20px;
+            display: flex;
+            justify-content: end;
+            align-content: end;
+            gap: 15px;
+        }
+        nav a{
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin:200px 0 25px 0;
+        }
+        section p{
+            font-size: 6em;
+        }
+        div.input-text{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin-bottom: 30px;
+            gap: 15px;
+        }
+        div input[type="text"]{
+            display: block;
+            width: 584px;
+            height: 45px;
+            border-radius: 28px;
+            border: solid 0.3px rgb(218, 215, 215);
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        div input[type="text"]:hover{
+            box-shadow:rgb(114, 114, 114) 0px 0px 3px ;
+            transition: 0.4s;
+        }
+        div input[type="text"]:focus{
+            outline: none;
+            box-shadow:rgb(114, 114, 114) 0px 0px 3px ;
+        }
+        div input[type="submit"]{
+            background-color: #f8f9fa;
+            border: solid 1px #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        div input[type="submit"]:hover{
+            border: solid 1px #dadce0;
+            box-shadow:rgb(114, 114, 114) 0px 0px 2px ;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="https://mail.google.com">Gmail</a>
+            <a href="https://images.google.com">Imagens</a>
+        </nav>
+        <section>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" >
+        </section>
+        <form action="https://www.google.com.br/search" method="get">
+            <div class="input-text">
+                <input type="text" name="q" placeholder="Pesquise no Google" required >
+            </div>
+            <div class="input-text">
+                <input type="submit" value="Pesquisa Google">
+                <input type="submit" value="Estou com sorte">
+            </div>
+        </form>
+    </div>
+    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+</body>
+</html>

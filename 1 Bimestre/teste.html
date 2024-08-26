@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Lampada</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        div{
+            text-align: center;
+        }
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A lampâda</h1>
+    </header>
+    <main>
+        <div>
+            <img src="./desligada.jpg" alt="lampâda" id = 'lamp'>
+        </div>
+        <div>
+                <button id = 'turnOn'>Ligar</button>
+                <button id = 'turnOff'>Desligar</button>
+        </div>
+    </main>
+
+    <script>
+        const turnOn = document.getElementById ('turnOn');
+        const turnOff = document.getElementById ('turnOff');
+        const lamp = document.getElementById('lamp');
+
+        function lampOn(){
+            lamp.src = './ligada.jpg';
+
+        }
+        function lampOff(){
+            lamp.src = './desligada.jpg';
+        }
+
+
+        turnOn.addEventListener('click', lampOn );
+        turnOff.addEventListener('click', lampOff );
+        lamp.addEventListener('mouseover', lampOn);
+        lamp.addEventListener('mouseleave',lampOff);
+    </script>
+</body>
+</html>

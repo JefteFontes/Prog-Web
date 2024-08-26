@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F2F2F2;
+            display: flex;
+            gap: 150px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            width: 30%;
+            padding: 25px;
+            font-weight: bold;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 1.4px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        div p{
+            color: #4285F4;
+            
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        div input[type="text"]{
+            width: 79%;
+            height: 40px;
+            border: 1.2px solid #c0c0c0;
+            border-radius: 3px;
+            padding: 0 10px;
+            outline: none;
+            font-size: 16px;
+        }
+        div input[type="submit"]{
+            width: 15%;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background-color: #4285F4;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        div input[type="submit"]:hover{
+            background-color: #357ae8;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Downloads Videos Tube</h1>
+    <div>
+        <p>YouTube DownVideo</p>
+        <form action="" method="get">
+            <input type="text" name="url" placeholder="https:// ...">
+            <input type="submit" value="Baixar">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Pizza</title>
+</head>
+<body background="./imagens_pizza (3)/imagens_pizza/fundo_listras.jpg">
+    <table border="2 solid" width="80%" cellspacing = "3" cellpadding = "9" align="center" bgcolor="white">
+        <tr>
+            <td><img width="100%" height="30%" src="imagens_pizza (3)/imagens_pizza/topo.png" alt=""></td>
+        </tr>
+        <tr>
+            <td>
+                <font face = "verdana" color = "brown" size = "2">
+                <h2><img src="imagens_pizza (3)/imagens_pizza/icone_pizza.gif" alt="icone_pizza">     Cadastre-se e receba nossas atualizações</h4>
+                <hr size="3" color="brown"/>
+                <form>
+                    <table align = "center" border="2" width="50%">
+                        <tr>
+                            <td align="right">Nome:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Senha:</td>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Confirmação de senha:</td>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Seu tipo de pizza preferido:</td>
+                            <td>
+                                <select name="pizza">
+                                    <option value="1">Calabresa</option>
+                                    <option value="2">Mussarela</option>
+                                    <option value="3">Portuguesa</option>
+                                    <option value="4">Margherita</option>
+                                    <option value="5">Peperoni</option>
+                                    <option value="6">Quatro Queijos</option>
+                                    <option value="7">California</option>
+                                    <option value="8">Bacon</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"> Quantas vezes come Pizza por semestre?</td>
+                            <td>
+                                <input type="radio" id="option1" name="option" value="1">Entre 1 a 5 vezes
+                                <br>
+                                <input type="radio" id="option2" name="option" value="2">Entre 6 a 10 vezes
+                                <br>
+                                <input type="radio" id="option3" name="option" value="3">Entre 11 a 15 vezes
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Comentários:</td>
+                            <td><textarea rows="4" cols="58" name="comentarios"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan = "2" align="center">
+                                <input type="checkbox" name ="env_emails" value="enviar_emails" checked = "checked">Deseja receber e-mails dos nossos parceiros
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type= "submit" name = "btn_enviar" value = "Enviar">
+                                <input type= "reset" name = "btn_limpar" value = "Limpar"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <hr size="3" color="brown"/>
+
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align = "center">
+                    <font face = "verdana" size = "1" color = "brown">
+                        <u>w w w . p i z z a o n l i n e . c o m . b r</u>  
+                    </font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td><img width="100%" height="30%" src="imagens_pizza (3)/imagens_pizza/topo.png" alt=""></td>
+        </tr>
+    </table>
+</body>
+</html>

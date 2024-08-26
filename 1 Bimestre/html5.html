@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form - HTML5</title>
+        <style>
+            input[required]{
+                border: 2px solid red;
+                outline: none; 
+            }
+            legend{
+                margin-left: 94.5%;
+            }
+            table label{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend><img src="opera.png" alt="Opera" width="120"></legend>
+                <table cellpadding = "3">
+                    <tr>
+                        <td align="right">
+                            <label for="name">Name (required)</label>
+                        </td>
+                        <td>
+                            <input type="text" required autofocus name="nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="name">Title</label>
+                        </td>
+                        <td>
+                            <input type="text" name="nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="name">Shoesize</label>
+                        </td>
+                        <td>
+                            <input type="number" name="nome" max="50" min = "13" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="name">Email (required)</label>
+                        </td>
+                        <td>
+                            <input type="email" required autofocus name="nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="name">Webpage</label>
+                        </td>
+                        <td>
+                            <input type="url" name="nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="name">Date of Birth</label>
+                        </td>
+                        <td>
+                            <input type="date" name="nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="name">Attractiveness</label>
+                        </td>
+                        <td>
+                            <input type="datetime" name="nome">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

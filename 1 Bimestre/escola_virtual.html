@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Virtual</title>
+</head>
+<body>
+    <h1 align = "center">Escola Virtual</h1>
+    <h2 align = "center">Formulário de Pré-Matrícula</h2>
+    <hr width="50%" size="4" color="#8E8E8E">
+    <form action="">
+        <table align="center" border="2" width="50%" cellpadding="5">
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr><strong>Dados Pessoais:</strong></tr>
+                        <tr>
+                            <td>
+                                <table align="center" width = "100%">
+                                    <tr>
+                                        <td align="right">Nome do aluno:</td>
+                                        <td><input type="text" size="30" name="aluno"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">Nascimento (dd/mm/aaaa)</td>
+                                        <td>
+                                            <input type="number" name="dia" min="1" max="31">/
+                                            <input type="number" name="mes" min="1" max="12">/
+                                            <input type="number" name="ano" min="1900" max="2024">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">Nome da Mãe:</td>
+                                        <td><input type="text" size="30" name = "mae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">Nome do Pai:</td>
+                                        <td><input type="text" size="30" name="pai"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">Telefone: </td>
+                                        <td>
+                                            DDD(<input type="number" min="1" max="100" name="ddd">)
+                                            Tel: <input type="text" size="8" name="tel">
+                                            Ramal: <input type="text" size="5" name = "ramal">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">Email:</td>
+                                        <td><input type="email" size="30"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr><strong>Informações de Matrícula:</strong></tr>
+                        <tr>
+                            <td valign = "top">
+                                Série:
+                                <br>
+                                <select name="serie">
+                                    <option value="pré-escolar">pré-escolar</option>
+                                    <option value="1 ano">1 ano fundamental</option>
+                                    <option value="2 ano">2 ano fundamental</option>
+                                    <option value="3 ano">3 ano fundamental</option>
+                                    <option value="4 ano">4 ano fundamental</option>
+                                    <option value="5 ano">5 ano fundamental</option>
+                                    <option value="6 ano">6 ano fundamental</option>
+                                    <option value="7 ano">7 ano fundamental</option>
+                                    <option value="8 ano">8 ano fundamental</option>
+                                    <option value="9 ano">9 ano fundamental</option>
+                                    <option value="1 anoM">1 ano médio</option>
+                                    <option value="2 anoM">2 ano médio</option>
+                                    <option value="3 anoM">3 ano médio</option>
+                                </select>
+                            </td>
+                            <td td valign = "top">
+                                Turno :
+                                <br>
+                                <input type="radio" id="option1" name="turno" value="Manha">Manha
+                                <br>
+                                <input type="radio" id="option2" name="turno" value="">Tarde
+                            </td>
+                            <td td valign = "top">
+                                Atividades Extracurriculares:
+                                <br>
+                                <input type="checkbox" name="atividade" value="Informática">Informática
+                                <br>
+                                <input type="checkbox" name="atividade" value="Música">Música
+                                <br>
+                                <input type="checkbox" name="atividade" value="Balet">Balet
+                                <br>
+                                <input type="checkbox" name="atividade" value="Pintura">Pintura
+                                <br>
+                                <input type="checkbox" name="atividade" value="Judo">Judô
+                                <br>
+                                <input type="checkbox" name="atividade" value="Futebol">Futebol
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <p align = "center">
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Limpar Campos">
+        </p>
+    </form>
+</body>
+</html>
