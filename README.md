@@ -13,5 +13,5 @@ A disciplina de **Programação para Internet** explora o desenvolvimento de apl
 
 Separado em 1° e 2° bimestres, contendo atividades realizadas em cada um deles e outro arquivos necessários para as paginas web, materiais como os citados abaixo:
 
-- - **/projetos**: Exemplos de projetos desenvolvidos ao longo do curso.
-- **/exercicios**: Lista de exercícios e desafios práticos para reforçar o conteúdo aprendido.
+- **Projetos**: Exemplos de projetos desenvolvidos ao longo do curso.
+- **Exercicios**: Lista de exercícios e desafios práticos para reforçar o conteúdo aprendido.
