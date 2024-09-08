@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobo CSS</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color: #111111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 150px;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 30px;
+            gap: 30px;
+        }
+        section img{
+            width: 330px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        nav a{
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            margin: 0 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">Logo</a>
+        </div>
+        <div class="menu">
+            <a href="">Sobre</a>
+            <a href="">Produto</a>
+            <a href="">Contato</a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <img src="img-lobo/lobo1.jpg" alt="">
+            <img src="img-lobo/lobo2.jpg" alt="">
+            <img src="img-lobo/lobo3.jpg" alt="">
+        </section>
+        <section>
+            <img src="img-lobo/lobo1.jpg" alt="">
+            <img src="img-lobo/lobo2.jpg" alt="">
+            <img src="img-lobo/lobo3.jpg" alt="">
+        </section>
+    </main>
+</body>
+</html>

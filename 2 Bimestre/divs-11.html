@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Assinante</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .cats-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Reduzi o gap para um layout mais compacto */
+            margin-bottom: 100px;
+        }
+
+        .cards {
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            border-radius: 6px;
+            background-color: #ffffff; /* Adiciona um fundo branco aos cards */
+        }
+
+        .img-curso {
+            width: 100%;
+            height: 150px;
+            border-radius: 6px 6px 0 0;
+            margin-bottom: 10px;
+        }
+
+        .user-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+        }
+
+        .content-card {
+            padding: 0px 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }       
+        
+        .number {
+            margin: 0px;
+            color: rgb(197, 197, 197);
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .describe {
+            display: inline;
+            height: 100%;
+            padding-top: 4px;
+        }
+
+        .describe p {
+            margin: 0px 0 6px;
+        }
+        .title {
+            color: #3c88bb;
+            font-weight: bold;
+        }
+
+        .time {
+            text-align: left;
+            font-size: 12px;
+        }
+        .time img {
+            width: 12px;
+            height: 12px;
+        }
+
+        h2{
+            font-weight: 200;
+        }
+        .user-section p {
+            margin-top: 0px;
+        }
+
+        .user-section div {
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(to right, white, rgb(20, 20, 20), white);
+            margin: 0px 0 30px;
+        }
+        .feed{
+            color: #8a8a8a;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="cats-cards">
+            <div class="cards">
+                <img src="./img-cats/imagem01.png" class = "img-curso">
+                <div class="content-card">
+                    <p class="number">1</p>
+                    <div class="describe">
+                        <p class="title">Lógica 101</p>
+                        <p class="time"> <span><img src="https://img.icons8.com/?size=100&id=82767&format=png&color=000000" alt=""></span> 103 min</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="./img-cats/imagem02.png" class = "img-curso">
+                <div class="content-card">
+                    <p class="number">2</p>
+                    <div class="describe">
+                        <p class="title">Criando uma maquina virtual Ubuntu</p>
+                        <p class="time"> <span><img src="https://img.icons8.com/?size=100&id=82767&format=png&color=000000" alt=""></span> 57 min</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="./img-cats/imagem03.png" class = "img-curso">
+                <div class="content-card">
+                    <p class="number">3</p>
+                    <div class="describe">
+                        <p class="title">Ubuntu 101</p>
+                        <p class="time"> <span><img src="https://img.icons8.com/?size=100&id=82767&format=png&color=000000" alt=""></span> 139 min</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="./img-cats/imagem04.png" class = "img-curso">
+                <div class="content-card">
+                    <p class="number">4</p>
+                    <div class="describe">
+                        <p class="title">Python 101</p>
+                        <p class="time"> <span><img src="https://img.icons8.com/?size=100&id=82767&format=png&color=000000" alt=""></span> 565 min</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="user-section">
+                <img src="./img-cats/user.png" alt="Cat User">
+                <h2>Olá, <b>Assinante</b></h2>
+                <p><b>Assinante</b></p>
+                <div></div>
+                <p class="feed">Você não tem nada no Feed</p>
+        </section>
+    </main>
+</body>
+</html>
